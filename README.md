@@ -76,6 +76,9 @@ CREATE TABLE orders (
     customer_id INT REFERENCES customers(id)
 );
 ```
+### DB Architecture
+<img width="270" alt="image" src="https://github.com/user-attachments/assets/0fb40e0b-ec65-4dd5-90a0-cec4935716c6" />
+
 
 ### Insert Sample Data
 Using Python:
@@ -137,6 +140,12 @@ cur.close()
 conn.close()
 print("✅ Data Insertion Complete!")
 ```
+### Cluster Componenets Architecture
+<img width="324" alt="image" src="https://github.com/user-attachments/assets/beded786-72d1-4846-b11d-a9f2b51cc66d" />
+
+### Minikube components
+<img width="333" alt="image" src="https://github.com/user-attachments/assets/30decefa-a011-4a33-be5c-d4362400cae4" />
+
 
 ## Conclusion
 This repository contains all necessary configurations and scripts to deploy a PostgreSQL database cluster with a load balancer, along with asynchronous replication to a standalone database, and schema setup with sample data population.
